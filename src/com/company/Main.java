@@ -6,11 +6,7 @@ public class Main {
         Pessoa pessoaZero = new Pessoa();
         Pessoa pessoaUm = new Pessoa("Stella", 3, "Dois", 108.0, 1.98);
         Pessoa pessoaDois = new Pessoa("Fernando", 80, "Três", 80.0, 1.72);
-        //Pessoa pessoa3 = new Pessoa("wes", 25);
-        //Por não existir um construtor gerado adequadamente para esse objeto na casse Pessoa, ocorre um erro
 
-
-        //Análise das variáveis imc e maiorDeIdade
 
         double imc = pessoaDois.calcularIMC();
 
@@ -25,12 +21,11 @@ public class Main {
         boolean maiorDeIdade = pessoaDois.eMaiorDeIdade();
 
         if (maiorDeIdade) {
-            System.out.println("É maior de idade");
+            System.out.println("Maior de 18 anos");
         } else {
-            System.out.println("Não é maior de idadhe");
+            System.out.println("Menor de 18 anos");
         }
 
-        //Imprimindo dados da pessoa
         String dataShow = pessoaDois.toString();
         System.out.println(pessoaDois);
     }
